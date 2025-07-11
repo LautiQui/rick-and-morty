@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rick and Morty API</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Rick and Morty - Personajes</h1>
+
+  <button id="btn-all">Obtener todos los personajes</button>
+
+  <h2>Filtros</h2>
+  <form id="filter-form">
+    <label>
+      Nombre: <input type="text" name="name" />
+    </label><br />
+    <label>
+      Estado:
+      <select name="status">
+        <option value="">--Cualquiera--</option>
+        <option value="alive">Alive</option>
+        <option value="dead">Dead</option>
+        <option value="unknown">Unknown</option>
+      </select>
+    </label><br />
+    <label>
+      Especie: <input type="text" name="species" />
+    </label><br />
+    <label>
+      Tipo: <input type="text" name="type" />
+    </label><br />
+    <label>
+      Género:
+      <select name="gender">
+        <option value="">--Cualquiera--</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="genderless">Genderless</option>
+        <option value="unknown">Unknown</option>
+      </select>
+    </label><br />
+    <button type="submit">Buscar con filtros</button>
+  </form>
+  <div id="results"></div>
+  <script src="app.js"></script>
+</body>
+</html>
